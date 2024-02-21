@@ -1,0 +1,15 @@
+.navBar{
+    z-index: 10000;
+    position: fixed;
+    right: 0;
+    top: 0px;
+    width: 100%;
+}
+.navBar ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.navBar ul > li > a {
+    color: white;
+}

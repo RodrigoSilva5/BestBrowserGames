@@ -1,10 +1,14 @@
 import './App.css'
-
+import { Navbar} from "./components/index"
+import { Outlet, Link } from "react-router-dom";
 
 function App() {
   return (
     <>
-      Hello world
+      <Navbar />
+      <main>
+        <Outlet />
+      </main>
     </>
   )
 }

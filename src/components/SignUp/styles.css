@@ -1,0 +1,17 @@
+
+.signUp form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+.signUp form div{
+    margin: 12px;
+}
+.signUp form button{
+    align-self: center;
+    width: 100%;
+}
+.signUp label {
+    width: 500px;
+}
