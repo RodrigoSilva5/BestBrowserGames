@@ -8,9 +8,9 @@ const Navbar = () => {
                 <nav>
                     <ul>
                         <li> 
-                            <a href="#">
-                            Home
-                            </a> 
+                             <Link to={`Home`}>
+                                Home
+                            </Link>
                         </li>
                         <li>
                             <Link to={`Login`}>

@@ -6,7 +6,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import { SignUp, Login, AddGame } from './components/index.jsx';
+import { SignUp, Login, AddGame, Home } from './components/index.jsx';
 
 
 const router = createBrowserRouter([
@@ -25,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "/AddGame",
         element: <AddGame /> ,
+      },
+      {
+        path: "/Home",
+        element: <Home /> ,
       },
     ],
   },

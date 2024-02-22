@@ -1,5 +1,7 @@
 import "./styles.css"
 import { useState } from "react"
+import { gamesLocal } from "../../watchers/Gameslocal"
+
 const AddGame = () => {
 
     const [form , setForm] = useState({
@@ -12,17 +14,9 @@ const AddGame = () => {
     const handleChange = e => setForm(prevState => ({...prevState, [e.target.name]: e.target.value}))
     function handleSubmit(evt) {
         evt.preventDefault()
-        if(localStorage.games){
-            // to do, optimizar isso
-            let games = JSON.parse(localStorage.getItem("games"))
-            console.log(games)
-            localStorage.setItem("games", [games, JSON.stringify(form)])
 
-        }else{
-            localStorage.setItem("games", JSON.stringify(form))
-        }
-        alert(`cadastrado com sucesso: 
-            ${JSON.stringify(form)}`)
+        gamesLocal.push(form)
+        alert('Jogo cadastrado com sucesso')
     }
     return (
         <section>
